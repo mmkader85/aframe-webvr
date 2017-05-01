@@ -23,4 +23,13 @@ router.get('/scene', function(req, res, next) {
     );
 });
 
+router.get('/background', function(req, res, next) {
+    res.render(
+        'background',
+        {
+            'title': 'Applying a background to the scene'
+        }
+    );
+});
+
 module.exports = router;
